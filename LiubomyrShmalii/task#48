@@ -1,0 +1,6 @@
+SELECT SupplierName, 
+       CASE 
+           WHEN Country = 'USA' THEN Phone = '***'
+           ELSE Phone 
+       END AS Phone
+FROM Suppliers;
