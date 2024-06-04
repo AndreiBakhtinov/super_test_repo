@@ -1,0 +1,10 @@
+/*В рамках БД песочница:
+ интернет-магазин написать запрос на вывод ТОП-3 самых дешевых товаров #27*/
+ 
+
+SELECT 
+    p.product_name, 
+    p.price
+FROM products 
+ORDER BY p.price ASC
+LIMIT 3;
