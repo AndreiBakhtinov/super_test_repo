@@ -1,0 +1,5 @@
+-- Задача. Вывести данные о клиентах из USA и France
+-- проекция: имя_клиента, страна_клиента
+
+SELECT * FROM Customers
+WHERE Country IN ("France", "USA");
